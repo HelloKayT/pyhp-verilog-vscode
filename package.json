@@ -1,0 +1,26 @@
+{
+  "name": "pyhp-verilog",
+  "displayName": "PyHP Verilog",
+  "description": "Syntax highlighting for pyhp embedded in Verilog",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.systemverilog"
+        ],
+        "path": "./syntaxes/pyhp-verilog.tmLanguage.json",
+        "scopeName": "source.pyhp-verilog",
+        "embeddedLanguages": {
+          "source.pyhp": "source.python"
+        }
+      }
+    ]
+  }
+}

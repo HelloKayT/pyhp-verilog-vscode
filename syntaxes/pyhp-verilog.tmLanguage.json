@@ -1,0 +1,26 @@
+{
+	"scopeName": "source.pyhp-verilog",
+	"injectionSelector": "L:source.systemverilog",
+	"patterns": [
+		{
+			"begin": "<%",
+			"end": "%>",
+			"contentName": "verilog.embedded.python",
+			"patterns": [
+				{
+					"include": "source.python"
+				}
+			],
+			"beginCaptures": {
+				"0": {
+					"name": "verilog.embedded.begin.python"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "verilog.embedded.end.python"
+				}
+			}
+		}
+	]
+}
